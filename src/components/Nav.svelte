@@ -1,0 +1,124 @@
+
+
+
+
+
+<header>
+    <nav>
+      <div class="left-side">
+        <p>LEARN NODEJS</p>
+      </div>
+      <div class="right-side">
+        <ul>
+          <a href="/home"><li>User Page SECRET</li></a>
+          <div class="dropdown">
+          </div>
+          <a href="/login"><li>Login</li></a>
+          <a href="/signup"><li>Signup</li></a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+<style>
+
+nav .left-side,
+nav .right-side {
+  margin: 0px 3em;
+}
+.dropdown-content p,
+.dropdown-content a {
+  font-family: "Courier New", Courier, monospace;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #252020;
+  padding: 10px;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+nav .right-side ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.right-side ul li {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0px 50px;
+  cursor: pointer;
+}
+.right-side ul li::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: white;
+  transition: 300ms;
+}
+
+.right-side ul li:hover::after {
+  width: 100%;
+}
+
+.right-side ul li,
+.left-side p {
+  color: white;
+}
+
+.left-side p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #0060b6;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: #252020;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content p {
+  text-align: center;
+  font-weight: 900;
+  border-bottom: solid;
+  margin: 0;
+  padding: 10px 0;
+}
+</style>
